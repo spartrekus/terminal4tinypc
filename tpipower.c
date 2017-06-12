@@ -13,6 +13,10 @@ int main()
     system( " vcgencmd measure_temp ;   vcgencmd get_config int ;  vcgencmd get_mem arm && vcgencmd get_mem gpu ;   vcgencmd measure_volts core  ;   vcgencmd measure_volts sdram_c  ;  vcgencmd measure_volts sdram_i    ;  vcgencmd measure_temp  " );
     // http://www.elinux.org/RPI_vcgencmd_usage
     return 0; 
-}  
-
+  
+  
+   //   https://www.raspberrypi.org/forums/viewtopic.php?f=63&t=162236&p=1050297
+   //   for id in core sdram_c sdram_i sdram_p ; do echo -e "$id:\t$(vcgencmd measure_volts $id)" ; done
+  
+  }
 
